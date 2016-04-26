@@ -16,7 +16,12 @@
 		var distArray = levenshteinenator(fob.string_a.value, fob.string_b.value);
 		var dist = distArray[ distArray.length - 1 ][ distArray[ distArray.length - 1 ].length - 1 ];
 		// display distance
-		fob.result.value = dist;
+		var percentage = dist/1347*100;
+		var score = (Math.round (percentage * 100) / 100)+"% wrong";
+		fob.result.value = score;
+
+		$('.finalscore p').text(score);
+
 	}
 
 	</script>
@@ -32,4 +37,5 @@
 		<input id="distance" type="text" name="result" value="" disabled="true">
 	</p>
 <audio id="audio" src="audio/fitter.mp3"></audio>
+<div class="finalscore"><p class="large"></p></div>
 </form>

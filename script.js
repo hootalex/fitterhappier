@@ -13,6 +13,7 @@ $(document).ready(function() {
     $("#p").text("");
     $("#p").addClass("disappearcompletely");
     $(".progressfill").addClass("load");
+		$(".finalscore").addClass("displayscore");
     document.getElementById('audio').play();
   });
 });
