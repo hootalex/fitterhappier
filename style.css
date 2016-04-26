@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('fonts/franklingothic-demi-webfont.eot');
+    src: url('fonts/franklingothic-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franklingothic-demi-webfont.woff2') format('woff2'),
+         url('fonts/franklingothic-demi-webfont.woff') format('woff'),
+         url('fonts/franklingothic-demi-webfont.ttf') format('truetype'),
+         url('fonts/franklingothic-demi-webfont.svg#franklin_gothic_fsdemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  background-color: #F3F2F0;
+}
+.hidden {
+  display: none;
+}
+#p {
+  border: none;
+  font-size: 80px;
+  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic';
+  text-transform: uppercase;
+  resize: none;
+  background-color: transparent;
+  overflow: hidden;
+  line-height: 80px;
+  color: black;
+}
+#p:focus {
+  outline: none;
+}
+#distance {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: black;
+  display: inline;
+  font-size: 16px;
+  text-align: right;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+}
+.progressfill {
+  border-bottom: 10px solid transparent;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  left: 0;
+  transform-origin: left;
+}
+.load {
+  animation-name: load;
+  animation-duration: 114s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(0, 1);
+    border-bottom: 10px solid #2958B0;
+  }
+  99% {
+    transform: scale(1, 1);
+    border-bottom: 10px solid #2958B0;
+  }
+  100% {
+    transform: scale(1, 1);
+    border-bottom: 100vh solid black;
+  }
+}
