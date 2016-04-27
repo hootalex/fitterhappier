@@ -44,7 +44,7 @@ html {
   text-align: right;
   border: none;
   position: fixed;
-  bottom: 15px;
+  top: 15px;
   right: 15px;
   width: 120px;
   background-color: transparent;
@@ -55,7 +55,7 @@ input:focus {
 .progressfill {
   border-bottom: 10px solid transparent;
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   width: 100vw;
   left: 0;
   transform-origin: left;
